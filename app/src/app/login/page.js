@@ -1,9 +1,8 @@
-import Tabela from "@/components/tabela/tabela";
-
+import Login from "@/components/login/login";
 export default function tabela() {
   return (
     <>
-      <Tabela />
+      <Login />
     </>
   );
 }

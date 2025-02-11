@@ -5,7 +5,7 @@ import Feature from '@/components/Feature';
 import Offer from '@/components/Offer';
 import About from '@/components/About';
 import Contect from '@/components/Contect';
-import Imc from "@/components/Imc"
+
 
 const Home = () => {
   return (
@@ -14,7 +14,6 @@ const Home = () => {
       <Header/>
     <Feature/>
       <Offer/>
-      <Imc/>
       <About/>
       <Contect/>
     </div>

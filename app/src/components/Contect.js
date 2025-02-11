@@ -3,11 +3,11 @@ import React from 'react'
 function Contect() {
     return (
         <div id='contact'>
-            <h1>CONTACT US</h1>
+            <h1>CONTATOS</h1>
             <form>
-            <input type='text' placeholder="First Name" required />
+            <input type='text' placeholder="Seu Nome" required />
             <input type='email' placeholder="Email" required />
-            <textarea placeholder='Write Here......' />
+            <textarea placeholder='Seu Comentario...' />
             <input type='submit' value='send' />
             </form>            
         </div>

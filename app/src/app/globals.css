@@ -35,7 +35,7 @@ input {
   background-image: url("/images/banner.png");
   position: relative;
   z-index: 0;
-}
+}   
 #main::before {
   position: absolute;
   content: "";
@@ -88,13 +88,21 @@ nav ul {
   box-shadow: 5px 10px 30px rgba(255, 201, 0, 0.38);
   transition: all ease 0.2s;
 }
-.active:hover {
-  background-color: #000000;
+.active:hover  {
+  background-color:  #000000;
   color: #ffffff;
   box-shadow: 5px 10px 30px rgba(255, 201, 0, 0.38);
   transition: all ease 0.2s;
 }
-nav ul li a {
+.sair  {
+  background-color: #d20000;
+  color: #ffffff;
+  box-shadow: 5px 10px 30px rgba(255, 201, 0, 0.38);
+  transition: all ease 0.2s;
+  
+}
+  
+nav ul li a,  .sair {
   font-family: "Lato";
   height: 40px;
   line-height: 43px;
@@ -109,12 +117,13 @@ nav ul li a {
   border-radius: 3px;
   transition: 0.2s ease-in-out;
 }
-nav ul li a:hover {
+nav ul li a:hover   {
   background-color: #ffb500;
   color: #ffffff;
   box-shadow: 5px 10px 30px rgba(255, 201, 0, 0.38);
   transition: all ease 0.2s;
 }
+
 nav .menu-btn,
 .menu-icon {
   display: none;
@@ -204,7 +213,95 @@ nav .menu-btn,
   overflow: hidden;
   transition: 0.4s ease-in-out;
   position: relative;
+  
 }
+
+.menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Estilos CSS para o componente Card */
+
+.features {
+  text-align: center;
+  padding: 50px 0;
+}
+
+#informacoes, .card {
+  background-color:#000000;
+  padding: 20px 50px;
+  text-align: center;
+  border-radius: 12px;
+  min-height: 80%;
+  color: white;
+}
+.imagemr{
+  margin-bottom: 20px;
+}
+.parad{
+  text-align: initial;
+}
+.divisao{
+  margin-top: 30px;
+}
+.borda{
+  border: 2px solid #000;
+}
+
+
+
+#informacoes, .card h1 {
+  margin: 60px ;
+  font-size: 40px;
+}
+
+#informacoes, .card {
+  font-size: 20px;
+  margin-bottom: 60px;
+}
+
+#informacoes .card h3{
+  text-align: left;
+  margin-top: 20px;
+}
+.parad{
+  color: white;
+}
+
+.imagemr {
+  width: 30%;
+  height: auto;
+  border-radius: 5px;
+}
+
+#informacoes:hover {
+  border: 1px solid #ffb500;
+  box-shadow: 2px 2px 12px rgba(255, 201, 0, 0.38);
+}
+
+@media screen and (min-width: 768px) {
+  .a-boxe {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 650.98px) {
+  .col-7 {
+    width: 100%;
+    .ex{
+      font-size: 15px;
+    }
+    .parad{
+      font-size: 12px;
+    }
+    .imagemr{
+      width: 120%;
+    }
+  }
+}
+
+
 .a-b-img {
   width: 100%;
   height: 60%;
@@ -241,7 +338,6 @@ nav .menu-btn,
   display: -webkit-box;
   max-width: 80%;
   margin-top: 5px;
-  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -258,7 +354,7 @@ nav .menu-btn,
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(/images/offer.png);
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA9OrhTEOx0rUNqRv4yEHLpHxdwhW28l_0cw&s);
   text-align: center;
 }
 
@@ -288,7 +384,7 @@ nav .menu-btn,
 }
 .pr-heading .details {
   font-size: 23px;
-  color: #c5c5c5;
+  color: #ffffff;
 }
 .header-heading .details {
   font-size: 23px;
@@ -591,7 +687,7 @@ nav .menu-btn,
   .pr-btns {
     margin: 0;
   }
-  .menu {
+  .menu li {
     display: none;
     position: absolute;
     top: 65px;
@@ -605,7 +701,7 @@ nav .menu-btn,
   .menu li {
     width: 100%;
   }
-  nav .menu li a {
+  nav .menu a {
     width: 100%;
     height: 40px;
     justify-content: center;
@@ -614,14 +710,14 @@ nav .menu-btn,
     padding: 25px;
     border: 1px solid rgba(38, 38, 38, 0.03);
   }
-  nav .menu-icon {
+  nav .menu-icon li {
     cursor: pointer;
     float: right;
     padding: 28px 20px;
     position: relative;
     user-select: none;
   }
-  nav .menu-icon .nav-icon {
+  nav .menu-icon .nav-icon .sair {
     background-color: #ffffff;
     display: block;
     height: 2px;
@@ -630,7 +726,7 @@ nav .menu-btn,
     width: 24px;
   }
   nav .menu-icon .nav-icon:before,
-  nav .menu-icon .nav-icon:after {
+  nav .menu-icon .nav-icon:after  {
     background: rgb(255, 255, 255);
     content: "";
     display: block;
@@ -668,8 +764,12 @@ nav .menu-btn,
     width: 100%;
     height: 400px;
   }
+.a-boxe {
+  width: 100%;
+    height: 400px;
+  
 }
-
+}
 
 .container2 {
   border: 5px solid #ddd;
@@ -688,3 +788,105 @@ nav .menu-btn,
   color: white;
   cursor: pointer;
 }
+
+/* CSS para estilizar o formulário e botões */
+.imc-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 2px;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(255, 201, 0, 0.38) 0%,
+    rgba(0, 0, 0, 0.6) 100%)
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #ccc;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.pr-btn4 {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px 0; /* Espaçamento entre os botões */
+  border: none;
+  border-radius: 4px;
+  background-color: #ffb500;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%; /* Ajusta a largura para 100% do contêiner */
+}
+.pr-btn3 {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px 0; /* Espaçamento entre os botões */
+  border: none;
+  border-radius: 4px;
+  background-color: #0056b3;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%; /* Ajusta a largura para 100% do contêiner */
+}
+
+.button-group {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espaço entre os botões */
+}
+
+.btn-edit {
+  background-color: #ffb500; /* Laranja */
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-edit:hover {
+  background-color: #fb8c00; /* Cor mais escura no hover */
+}
+
+.btn-delete {
+  background-color: #ff1100; /* Vermelho */
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-delete:hover {
+  background-color: #d32f2f; /* Cor mais escura no hover */
+}
+ 
