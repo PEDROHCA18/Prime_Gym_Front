@@ -1,12 +1,11 @@
 import React from 'react';
 import Image from 'next/image';
-import aboutimage from '/pedro/gym_prime/app/public/images/about.png';
 
 function About() {
     return (
         <div id='about'>
             <div className='about-image'>
-                <Image src="/images/about.png" alt="" />
+                <Image src="/images/about.png" alt="" width={500} height={500}/>
             </div>
             <div className='about-text'>
                 <h1>Sobre a Plataforma</h1>
