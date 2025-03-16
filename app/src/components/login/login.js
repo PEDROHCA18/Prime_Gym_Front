@@ -23,7 +23,7 @@ const Login = () => {
     const { email, senha } = data;
 
     try {
-      const response = await fetch("https://gym-academy-1.vercel.app/login", {
+      const response = await fetch("https://gymacademy.onrender.com/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

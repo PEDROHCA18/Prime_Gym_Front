@@ -687,7 +687,7 @@ nav .menu-btn,
   .pr-btns {
     margin: 0;
   }
-  .menu li {
+  .menu {
     display: none;
     position: absolute;
     top: 65px;
@@ -701,7 +701,7 @@ nav .menu-btn,
   .menu li {
     width: 100%;
   }
-  nav .menu a {
+  nav .menu li a {
     width: 100%;
     height: 40px;
     justify-content: center;
@@ -710,14 +710,14 @@ nav .menu-btn,
     padding: 25px;
     border: 1px solid rgba(38, 38, 38, 0.03);
   }
-  nav .menu-icon li {
+  nav .menu-icon {
     cursor: pointer;
     float: right;
     padding: 28px 20px;
     position: relative;
     user-select: none;
   }
-  nav .menu-icon .nav-icon .sair {
+  nav .menu-icon .nav-icon {
     background-color: #ffffff;
     display: block;
     height: 2px;
@@ -726,7 +726,7 @@ nav .menu-btn,
     width: 24px;
   }
   nav .menu-icon .nav-icon:before,
-  nav .menu-icon .nav-icon:after  {
+  nav .menu-icon .nav-icon:after {
     background: rgb(255, 255, 255);
     content: "";
     display: block;
