@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import logo from "@/images2/l.png";
-import "@/components/Css/form.css"
+import "@/components/Css/form.css";
 
 const Formulario = ({ id }) => {
   const { register, handleSubmit, setValue, formState: { errors } } = useForm();
@@ -33,7 +33,7 @@ const Formulario = ({ id }) => {
         const data = await response.json();
   
         setValue("nome", data.nome || "");
-        setValue("comoExecutar", data.comoExexutar || "");
+        setValue("comoExexutar", data.comoExexutar || ""); 
         setValue("treino", data.treino || "");
   
         if (data.gif) {
@@ -64,7 +64,7 @@ const Formulario = ({ id }) => {
   const onSubmit = async (data) => {
     const formData = new FormData();
     formData.append("nome", data.nome);
-    formData.append("comoExexutar", data.comoExexutar);
+    formData.append("comoExexutar", data.comoExexutar); 
     formData.append("treino", data.treino);
     
     if (imagem) {
@@ -73,21 +73,30 @@ const Formulario = ({ id }) => {
 
     try {
       const token = localStorage.getItem("token");
-      const response = await fetch("https://gymacademy.onrender.com/salvar-exercicio", {
-        method: "POST",
-        headers: `Authorization: Bearer ${token}`,
+
+      const url = id 
+        ? `https://gymacademy.onrender.com/alterar-exercicio/${id}` 
+        : `https://gymacademy.onrender.com/salvar-exercicio`;
+
+      const method = id ? "PUT" : "POST";
+
+      const response = await fetch(url, {
+        method,
+        headers: {
+          Authorization: `Bearer ${token}`
+        },
         body: formData,
       });
 
       if (!response.ok) {
-        throw new Error("Erro ao salvar o exercício");
+        throw new Error("Erro ao salvar/alterar o exercício");
       }
 
-      alert("Exercício salvo com sucesso!");
+      alert(id ? "Exercício alterado com sucesso!" : "Exercício salvo com sucesso!");
       router.push("/");
     } catch (error) {
       console.error(error);
-      alert("Erro ao salvar o exercício. Tente novamente.");
+      alert("Erro ao processar o exercício. Tente novamente.");
     }
   };
   
@@ -117,8 +126,8 @@ const Formulario = ({ id }) => {
 
         <div className="form-group">
           <label htmlFor="comoExecutar">Como Executar</label>
-          <textarea {...register("comoExecutar", { required: "Este campo é obrigatório" })} id="comoExecutar" />
-          {errors.comoExecutar && <p className="error-message">{errors.comoExecutar.message}</p>}
+          <textarea {...register("comoExexutar", { required: "Este campo é obrigatório" })} id="comoExecutar" />
+          {errors.comoExexutar && <p className="error-message">{errors.comoExexutar.message}</p>}
         </div>
 
         <div className="form-group">
@@ -136,14 +145,11 @@ const Formulario = ({ id }) => {
           
         </div>
 
-        <button type="submit">Enviar</button>
+        <button type="submit">{id ? "Alterar" : "Enviar"}</button>
       </form>
       
     </div>
   );
-  
 };
-
-
   
 export default Formulario;
