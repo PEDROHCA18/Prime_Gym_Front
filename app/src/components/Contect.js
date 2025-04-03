@@ -8,7 +8,7 @@ function Contect() {
             <input type='text' placeholder="Seu Nome" required />
             <input type='email' placeholder="Email" required />
             <textarea placeholder='Seu Comentario...' />
-            <input type='submit' value='send' />
+            <input type='submit' value='Enviar' />
             </form>            
         </div>
     )

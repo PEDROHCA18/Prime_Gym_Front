@@ -8,16 +8,16 @@ function Feature() {
         <div id='features'>
             <h1>TREINOS</h1>
             <div className='a-container'>
-                <Featurebox image={figure1} title="Peito" />
-                <Featurebox image={figure2} title="Costa"/>
-                <Featurebox image={figure1} title="Bicéps" />
-                <Featurebox image={figure2} title="Tricéps"/>
+            <a href="/treinos/peito"> <Featurebox image={figure1} title="Peito" /></a>
+            <a href="/treinos/costa"> <Featurebox image={figure2} title="Costa"/></a>
+            <a href="/treinos/biceps">  <Featurebox image={figure1} title="Bicéps" /></a>
+            <a href="/treinos/triceps"> <Featurebox image={figure2} title="Tricéps"/></a>
             </div>
             <div className='a-container'>
-                <Featurebox image={figure1} title="Ombros"/>
-                <Featurebox image={figure2} title="Glúteos"/>
-                <Featurebox image={figure1} title="Panturrilhas" />
-                <Featurebox image={figure2} title="Pernas"/>
+            <a href="/treinos/ombros"> <Featurebox image={figure1} title="Ombros"/></a>
+            <a href="/treinos/gluteos"> <Featurebox image={figure2} title="Glúteos"/></a>
+            <a href="/treinos/panturrilhas"> <Featurebox image={figure1} title="Panturrilhas" /></a>
+            <a href="/treinos/pernas"> <Featurebox image={figure2} title="Pernas"/></a>
             </div>
             
         </div>

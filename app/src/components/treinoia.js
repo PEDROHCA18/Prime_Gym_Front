@@ -53,56 +53,240 @@ const FitnessForm = () => {
             ["Cadeira Flexora", 3, "10-12", "45s"]
           ]]
         ],
-        perder: [
-          ["Segunda", "Cardio", [
-            ["Corrida HIIT", "-", "30 min", "-"],
+        perder:  [
+          ["Segunda", "Peito / Tríceps + Cardio", [
+            ["Supino Reto", 4, "10-12", "45s"],
+            ["Supino Inclinado com Halteres", 4, "10-12", "45s"],
+            ["Crucifixo com Halteres", 3, "12-15", "30s"],
+            ["Tríceps Corda na Polia", 3, "12-15", "30s"],
+            ["Mergulho entre Bancos", 3, "12-15", "30s"],
+            ["Esteira (corrida leve)", 1, "20 min", "-"]
           ]],
-          ["Terça", "Pernas", [
-            ["Agachamento", 3, "12-15", "30s"],
-            ["Cadeira Flexora", 3, "12-15", "30s"],
+          ["Terça", "Pernas + Cardio", [
+            ["Agachamento Livre", 4, "10-12", "45s"],
+            ["Afundo com Halteres", 3, "12-15", "30s"],
+            ["Leg Press", 3, "12-15", "30s"],
+            ["Extensora", 3, "12-15", "30s"],
+            ["Panturrilha no Smith", 4, "15-20", "30s"],
+            ["Esteira (subida rápida)", 1, "15 min", "-"]
           ]],
-          ["Quarta", "Treino Funcional", [
-            ["Burpees", 3, "15", "30s"],
+          ["Quarta", "Costas / Bíceps + Cardio", [
+            ["Remada Curvada", 4, "10-12", "45s"],
+            ["Puxada Frontal", 3, "12-15", "30s"],
+            ["Levantamento Terra", 3, "10-12", "45s"],
+            ["Rosca Direta", 3, "12-15", "30s"],
+            ["Rosca Alternada", 3, "12-15", "30s"],
+            ["Esteira (corrida leve)", 1, "20 min", "-"]
+          ]],
+          ["Quinta", "Ombros / Abdômen", [
+            ["Desenvolvimento Militar", 4, "10-12", "45s"],
+            ["Elevação Lateral", 3, "12-15", "30s"],
+            ["Elevação Frontal", 3, "12-15", "30s"],
+            ["Face Pull", 3, "12-15", "30s"],
+            ["Prancha Abdominal", 3, "40s", "30s"],
+            ["Abdominal Bicicleta", 3, "20 repetições", "30s"]
+          ]],
+          ["Sexta", "Peito", [
+            ["Supino Inclinado", 3, "15", "30s"],
+            ["Supino Reto", 3, "12-15", "30s"],
+            ["Flexões de Braço", 3, "15-20", "30s"],
+            ["Peck Deck", 3, "20", "30s"],
+            ["Corrida Intervalada na Esteira", 1, "20 min (1min rápido / 1min leve)", "-"]
           ]]
         ],
         manter: [
-          ["Segunda", "Peito", [
-            ["Supino Inclinado", 3, "10-12", "45s"],
+          ["Segunda-feira", "Peito / Panturrilhas", [
+            ["Crucifixo Reto (Máquina ou Cabo)", 3, "12-15", "45s"],
+            ["Supino Inclinado com Halteres", 3, "10-15", "60s"],
+            ["Supino Máquina (Preferência Inclinado)", 3, "10-12", "60s"],
+            ["Supino Reto (Barra Guiada ou Halteres)", 3, "10-15", "60s"],
+            ["Cross Over", 4, "15", "45s"],
+            ["Paralela", 4, "Falha", "60s"],
+            ["Panturrilhas (Máquina a Escolha)", 6, "20", "30s"]
           ]],
-          ["Terça", "Pernas", [
-            ["Agachamento", 3, "10-12", "45s"],
+          ["Terça-feira", "Costas / Abdômen", [
+            ["Remada Curvada com Barra", 4, "8-12", "60s"],
+            ["Remada com Halteres", 3, "12", "45s"],
+            ["Puxador Frente", 4, "10-15", "60s"],
+            ["Remada Máquina", 3, "12", "45s"],
+            ["Remada Baixa Cabo", 3, "12", "45s"],
+            ["Pullover", 4, "15", "45s"],
+            ["Abdominal Infra", 3, "15", "30s"],
+            ["Prancha", 3, "30-40s", "30s"]
           ]],
-          ["Quarta", "Costas", [
-            ["Remada Curvada", 3, "10-12", "45s"],
+        
+          ["Quarta-feira", "Pernas", [
+            ["Cadeira Extensora", 4, "20", "45s"],
+            ["Agachamento Livre", 3, "8-15", "60s"],
+            ["Leg Press", 4, "15", "60s"],
+            ["Cadeira Flexora Deitada", 3, "15", "45s"],
+            ["Cadeira Flexora Sentada", 3, "12-15", "45s"],
+            ["Stiff", 3, "12", "45s"],
+            ["Panturrilhas (Máquina a Escolha)", 6, "20", "30s"]
+          ]],
+        
+          ["Quinta-feira", "Ombros / Abdômen", [
+            ["Elevação Lateral no Cabo", 3, "15", "45s"],
+            ["Elevação Lateral com Halteres", 3, "15", "45s"],
+            ["Desenvolvimento Máquina", 4, "8-15", "60s"],
+            ["Elevação Lateral na Máquina", 3, "15", "45s"],
+            ["Elevação Frontal com Halteres", 3, "12", "45s"],
+            ["Crucifixo Invertido (Cabo ou Máquina)", 4, "12", "45s"],
+            ["Panturrilhas (Máquina a Escolha)", 6, "20", "30s"],
+            ["Abdominal Supra", 3, "15", "30s"]
+          ]],
+        
+          ["Sexta-feira", "Braços / Cardio", [
+            ["Rosca Direta no Cabo", 4, "12", "45s"],
+            ["Rosca Direta com Halteres", 4, "10-12", "45s"],
+            ["Rosca Scott", 4, "10-12", "45s"],
+            ["Extensão de Tríceps no Cabo", 4, "15", "45s"],
+            ["Extensão de Tríceps na Máquina", 4, "15", "45s"],
+            ["Supinado ou Paralela Máquina", 4, "10-15", "60s"],
+            ["Esteira (Corrida leve)", 20, "min", "-"]
           ]]
         ]
       },
       mulher: {
         ganhar: [
-          ["Segunda", "Glúteos e Pernas", [
-            ["Agachamento Livre", 4, "8-12", "60s"],
-            ["Leg Press", 4, "10-12", "60s"],
-            ["Afundo", 3, "12-15", "45s"],
+          ["Segunda-feira", "Pernas e Glúteos", [
+            ["Agachamento Livre", 3, "12-15", "60s"],
+            ["Leg Press 45°", 3, "12-15", "60s"],
+            ["Afundo com Halteres", 3, "12", "45s"],
+            ["Glúteo no Smith", 3, "12-15", "45s"],
+            ["Cadeira Extensora", 3, "15", "45s"],
+            ["Panturrilhas em Pé", 3, "15-20", "30s"]
           ]],
-          ["Terça", "Costas e Braços", [
-            ["Barra Fixa", 3, "8-10", "60s"],
-            ["Remada Curvada", 4, "10-12", "60s"],
+        
+          ["Terça-feira", "Costas e Bíceps", [
+            ["Puxador Frente", 3, "12-15", "45s"],
+            ["Remada Curvada", 3, "10-12", "45s"],
+            ["Remada Unilateral com Halter", 3, "10-12", "45s"],
+            ["Rosca Direta com Halteres", 3, "10-12", "45s"],
+            ["Rosca Martelo", 3, "10-12", "45s"],
+            ["Abdominal Supra", 3, "15", "30s"]
+          ]],
+        
+          ["Quarta-feira", "Panturrilhas e Abdominais", [
+            ["Panturrilhas em Pé", 4, "15-20", "30s"],
+            ["Panturrilhas Sentado", 4, "15-20", "30s"],
+            ["Elevação de Panturrilha no Leg Press", 3, "15-20", "30s"],
+            ["Abdominal Infra", 3, "15-20", "30s"],
+            ["Prancha", 3, "30s", "30s"],
+            ["Abdominal Oblíquo", 3, "15", "30s"]
+          ]],
+        
+          ["Quinta-feira", "Ombros e Tríceps", [
+            ["Desenvolvimento com Halteres", 3, "12-15", "45s"],
+            ["Elevação Lateral", 3, "12-15", "45s"],
+            ["Elevação Frontal", 3, "12-15", "45s"],
+            ["Tríceps Corda no Pulley", 3, "12-15", "45s"],
+            ["Tríceps Francês com Halteres", 3, "12-15", "45s"],
+            ["Prancha", 3, "30s", "30s"]
+          ]],
+        
+          ["Sexta-feira", "Pernas e Glúteos", [
+            ["Agachamento no Smith", 3, "12-15", "60s"],
+            ["Passada com Halteres", 3, "12", "45s"],
+            ["Elevação Pélvica (Hip Thrust)", 3, "12-15", "60s"],
+            ["Cadeira Flexora", 3, "12-15", "45s"],
+            ["Panturrilhas Sentado", 3, "15-20", "30s"],
+            ["Abdução na Máquina", 3, "15-20", "30s"]
           ]]
         ],
         perder: [
-          ["Segunda", "Cardio", [
-            ["Corrida HIIT", "-", "30 min", "-"],
+          ["Segunda-feira", "Pernas, Glúteos e Cardio", [
+            ["Agachamento Livre", 3, "12-15", "60s"],
+            ["Leg Press 45°", 3, "12-15", "60s"],
+            ["Afundo com Halteres", 3, "12", "45s"],
+            ["Glúteo no Smith", 3, "12-15", "45s"],
+            ["Cadeira Extensora", 3, "15", "45s"],
+            ["Panturrilhas em Pé", 3, "15-20", "30s"],
+            ["🚴‍♀️ Cardio: Bicicleta Ergométrica", "15 min", "-", "-"]
           ]],
-          ["Terça", "Pernas", [
-            ["Agachamento", 3, "12-15", "30s"],
+        
+          ["Terça-feira", "Costas, Bíceps e Cardio", [
+            ["Puxador Frente", 3, "12-15", "45s"],
+            ["Remada Curvada", 3, "10-12", "45s"],
+            ["Remada Unilateral com Halter", 3, "10-12", "45s"],
+            ["Rosca Direta com Halteres", 3, "10-12", "45s"],
+            ["Rosca Martelo", 3, "10-12", "45s"],
+            ["Abdominal Supra", 3, "15", "30s"],
+            ["🏃‍♀️ Cardio: Corrida Leve", "15 min", "-", "-"]
+          ]],
+        
+          ["Quarta-feira", "Panturrilhas, Abdominais e Cardio", [
+            ["Panturrilhas em Pé", 4, "15-20", "30s"],
+            ["Panturrilhas Sentado", 4, "15-20", "30s"],
+            ["Elevação de Panturrilha no Leg Press", 3, "15-20", "30s"],
+            ["Abdominal Infra", 3, "15-20", "30s"],
+            ["Prancha", 3, "30s", "30s"],
+            ["Abdominal Oblíquo", 3, "15", "30s"],
+            ["🚶‍♀️ Cardio: Caminhada Rápida", "20 min", "-", "-"]
+          ]],
+        
+          ["Quinta-feira", "Ombros, Tríceps e Cardio", [
+            ["Desenvolvimento com Halteres", 3, "12-15", "45s"],
+            ["Elevação Lateral", 3, "12-15", "45s"],
+            ["Elevação Frontal", 3, "12-15", "45s"],
+            ["Tríceps Corda no Pulley", 3, "12-15", "45s"],
+            ["Tríceps Francês com Halteres", 3, "12-15", "45s"],
+            ["Prancha", 3, "30s", "30s"],
+            ["🚴‍♀️ Cardio: Subir escadas ou Bike", "15 min", "-", "-"]
+          ]],
+        
+          ["Sexta-feira", "Pernas, Glúteos e Cardio", [
+            ["Agachamento no Smith", 3, "12-15", "60s"],
+            ["Passada com Halteres", 3, "12", "45s"],
+            ["Elevação Pélvica (Hip Thrust)", 3, "12-15", "60s"],
+            ["Cadeira Flexora", 3, "12-15", "45s"],
+            ["Panturrilhas Sentado", 3, "15-20", "30s"],
+            ["Abdução na Máquina", 3, "15-20", "30s"],
+            ["🏃‍♀️ Cardio: Corrida Intervalada", "15 min", "-", "-"]
           ]]
         ],
         manter: [
-          ["Segunda", "Pernas", [
-            ["Agachamento", 3, "10-12", "45s"],
+          ["Segunda-feira", "Pernas e Glúteos", [
+            ["Agachamento Livre", 3, "10-12", "60s"],
+            ["Leg Press 45°", 3, "12", "60s"],
+            ["Afundo com Halteres", 3, "12", "45s"],
+            ["Cadeira Extensora", 3, "15", "45s"],
+            ["Elevação Pélvica (Hip Thrust)", 3, "12", "60s"],
+            ["Panturrilhas em Pé", 3, "15-20", "30s"]
           ]],
-          ["Terça", "Costas", [
-            ["Remada", 3, "10-12", "45s"],
+        
+          ["Terça-feira", "Costas e Bíceps", [
+            ["Puxador Frente", 3, "12", "45s"],
+            ["Remada Curvada", 3, "10-12", "45s"],
+            ["Remada Unilateral com Halter", 3, "10-12", "45s"],
+            ["Rosca Direta com Halteres", 3, "10-12", "45s"],
+            ["Rosca Martelo", 3, "10-12", "45s"]
+          ]],
+        
+          ["Quarta-feira", "Panturrilhas e Abdominais", [
+            ["Panturrilhas em Pé", 4, "15-20", "30s"],
+            ["Panturrilhas Sentado", 4, "15-20", "30s"],
+            ["Elevação de Panturrilha no Leg Press", 3, "15-20", "30s"],
+            ["Abdominal Supra", 3, "15", "30s"],
+            ["Prancha", 3, "30s", "30s"],
+            ["Abdominal Oblíquo", 3, "15", "30s"]
+          ]],
+        
+          ["Quinta-feira", "Ombros e Tríceps", [
+            ["Desenvolvimento com Halteres", 3, "12", "45s"],
+            ["Elevação Lateral", 3, "12", "45s"],
+            ["Elevação Frontal", 3, "12", "45s"],
+            ["Tríceps Corda no Pulley", 3, "12", "45s"],
+            ["Tríceps Francês com Halteres", 3, "12", "45s"]
+          ]],
+        
+          ["Sexta-feira", "Pernas e Glúteos", [
+            ["Agachamento no Smith", 3, "12", "60s"],
+            ["Passada com Halteres", 3, "12", "45s"],
+            ["Elevação Pélvica (Hip Thrust)", 3, "12", "60s"],
+            ["Cadeira Flexora", 3, "12", "45s"],
+            ["Abdução na Máquina", 3, "15", "30s"],
+            ["Panturrilhas Sentado", 3, "15", "30s"]
           ]]
         ]
       }
