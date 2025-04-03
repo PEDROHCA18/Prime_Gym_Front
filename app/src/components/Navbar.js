@@ -52,9 +52,9 @@ export default function Navbar() {
       </label>
       <ul className="menu">
         <li>
-          <Link to="main" smooth={true} duration={1000}>
+          <a href="/">
             Home
-          </Link>
+          </a>
         </li>
         <li>
           <Link to="features" smooth={true} duration={1000}>

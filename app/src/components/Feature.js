@@ -8,16 +8,16 @@ function Feature() {
         <div id='features'>
             <h1>TREINOS</h1>
             <div className='a-container'>
-            <a href="/treinos/peito"> <Featurebox image={figure1} title="Peito" /></a>
-            <a href="/treinos/costa"> <Featurebox image={figure2} title="Costa"/></a>
-            <a href="/treinos/biceps">  <Featurebox image={figure1} title="Bicéps" /></a>
-            <a href="/treinos/triceps"> <Featurebox image={figure2} title="Tricéps"/></a>
+            <a href="/treinos/Peito"> <Featurebox image={figure1} title="Peito" /></a>
+            <a href="/treinos/Costa"> <Featurebox image={figure2} title="Costa"/></a>
+            <a href="/treinos/Biceps">  <Featurebox image={figure1} title="Bicéps" /></a>
+            <a href="/treinos/Triceps"> <Featurebox image={figure2} title="Tricéps"/></a>
             </div>
             <div className='a-container'>
-            <a href="/treinos/ombros"> <Featurebox image={figure1} title="Ombros"/></a>
-            <a href="/treinos/gluteos"> <Featurebox image={figure2} title="Glúteos"/></a>
-            <a href="/treinos/panturrilhas"> <Featurebox image={figure1} title="Panturrilhas" /></a>
-            <a href="/treinos/pernas"> <Featurebox image={figure2} title="Pernas"/></a>
+            <a href="/treinos/Ombros"> <Featurebox image={figure1} title="Ombros"/></a>
+            <a href="/treinos/Gluteos"> <Featurebox image={figure2} title="Glúteos"/></a>
+            <a href="/treinos/Panturrilhas"> <Featurebox image={figure1} title="Panturrilhas" /></a>
+            <a href="/treinos/Pernas"> <Featurebox image={figure2} title="Pernas"/></a>
             </div>
             
         </div>
