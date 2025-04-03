@@ -1,0 +1,120 @@
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px; /* Adicionando padding para telas menores */
+  }
+  
+  .formcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1000px; /* Aumentando a largura máxima */
+    width: 100%; /* Fazendo a largura ser 100% */
+    margin: auto;
+    padding: 20px;
+    border: 2px solid #ffb500;
+    border-radius: 10px;
+    background-color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    color: #ffb500;
+    text-align: center;
+  }
+  
+  .form-group {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffb500;
+  }
+  
+  .input,
+  .select,
+  .button {
+    width: 100%; /* Mantendo a largura em 100% */
+    max-width: 600px; /* Definindo uma largura máxima para inputs e selects */
+    padding: 12px; /* Aumentando o padding para melhor usabilidade */
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc; /* Adicionando borda para inputs e selects */
+    border-radius: 5px; /* Arredondando bordas */
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 5px;
+  }
+  
+  .button {
+    background-color: #ffb500;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Efeito de transição */
+  }
+  
+  .button:hover {
+    background-color: #e5a300; /* Mudança de cor ao passar o mouse */
+  }
+  
+  .exercises {
+    margin-top: 20px;
+    color: white;
+    background-color: #333;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+  }
+  
+  .exercises table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .exercises th,
+  .exercises td {
+    border: 1px solid #ccc;
+    padding: 10px; /* Aumentando o padding das células da tabela */
+    text-align: left;
+  }
+  
+  /* Responsividade para telas menores */
+  @media (max-width: 768px) {
+    .formcontainer {
+      width: 90%; /* Largura adaptável para telas menores */
+    }
+  }
+  .exercises {
+    margin-top: 20px;
+    color: white;
+    background-color: #333;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center; /* Alinhando o conteúdo ao centro */
+  }
+  
+  .exercises button {
+    display: block; /* Fazendo o botão se comportar como um bloco */
+    margin: 10px auto; /* Centralizando o botão */
+  }
+  
+  .imc-display {
+    color: white; /* Garantindo que o texto do IMC seja branco */
+    text-align: center; /* Centralizando o IMC */
+    margin-top: 20px; /* Adicionando margem superior */
+  }
+  .imccolor{
+    color: azure;
+  }

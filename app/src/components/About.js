@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import aboutimage from '/pedro/gym_prime/app/public/images/about.png';
+import aboutimage from '../app/public/images/about.png';
 
 function About() {
     return (

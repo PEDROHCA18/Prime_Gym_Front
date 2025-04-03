@@ -7,6 +7,7 @@ import About from '@/components/About';
 import Contect from '@/components/Contect';
 
 
+
 const Home = () => {
   return (
     <div>

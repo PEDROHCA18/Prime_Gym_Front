@@ -90,7 +90,7 @@ export default function Treino({ params }) {
                   <div className="card">
                     <div className="divisao">
                       <h2 className="nometreino">{treino.nome}</h2>
-                      <img src={treino.gif || "/"} alt={treino.nome} className="imagemr" />
+                      <img classname="imagemr" src={treino.gif || "/"} alt={treino.nome} className="imagemr" />
                       <h3 className="ex">Como executar:</h3>
                       <p className="parad">{treino.comoExexutar}</p>
 

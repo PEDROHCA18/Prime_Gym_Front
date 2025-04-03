@@ -46,34 +46,16 @@ function Offer() {
                 </p>
 
                 <form onSubmit={handleCalculateIMC} className='imc-form'>
-                    <div className='form-group'>
-                        <label htmlFor='weight'>Peso (kg):</label>
-                        <input
-                            type='number'
-                            id='weight'
-                            value={weight}
-                            onChange={(e) => setWeight(e.target.value)}
-                            required
-                        />
-                    </div>
-                    <div className='form-group'>
-                        <label htmlFor='height'>Altura (cm):</label>
-                        <input
-                            type='number'
-                            id='height'
-                            value={height}
-                            onChange={(e) => setHeight(e.target.value)}
-                            required
-                        />
-                    </div>
+                  
+                    
                    
-                    <button type='submit' className='pr-btn3'>Calcular IMC</button>
+                
                     
                     
-                    <a href='/tabela' className='pr-btn4'>Masculina</a>
+                    <a href='/treinoia' className='pr-btn4'>TABELA PERSONALIZADA</a>
                 
                
-                    <a href='/tabelaFeminina' className='pr-btn4'>Feminina</a>
+                    
                 
                 </form>
 
