@@ -1,8 +1,8 @@
 import React from 'react';
 
 import Featurebox from './Featurebox';
-import figure1 from '/pedro/gym_prime/app/public/images/1.svg';
-import figure2 from '/pedro/gym_prime/app/public/images/2.svg';
+import figure1 from '@/images2/1.svg';
+import figure2 from '@/images2/2.svg';
 function Feature() {
     return (
         <div id='features'>
